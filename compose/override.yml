@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  jellyseerr:
+    ports:
+      - "5055:5055"
+    environment:
+      - LOG_LEVEL=debug
+      - JELLYFIN_TYPE=emby
+      - TZ=Asia/Shanghai
+    volumes:
+      - /Users/alan/Github/auto-TV/logs/jellyseerr:/app/logs
+      - /Users/alan/Github/auto-TV/custom_conf/jellyseerr/db:/app/config/db
+    deploy:
+      replicas: 1
+
+#  emby:
+#    ports:
+#      - 8096:8096
+#      - 8920:8920
+#    environment:
+#      - UID=0
+#      - GID=0
+#      - GIDLIST=0
+#      - TZ=TZ=Asia/Shanghai
+#    volumes:
+#      - /Users/alan/Github/auto-TV/custom_conf/emby:/config
+#      - /Users/alan/Github/auto-TV/data/video:/media/video
+#    deploy:
+#      replicas: 1
