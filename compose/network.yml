@@ -3,9 +3,9 @@ services:
   jellyseerr:
     networks:
       - EXTERNALNETWORK
-#  emby:
-#    networks:
-#      - EXTERNALNETWORK
+  emby:
+    networks:
+      - EXTERNALNETWORK
 
 networks:
   EXTERNALNETWORK:

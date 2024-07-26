@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jellyseerr:
-    image: fallenbagel/jellyseerr
-#
-#  emby:
-#    image: emby/embyserver:latest
+    image: fallenbagel/jellyseerr:lastest
+
+  emby:
+    image: emby/embyserver:latest
