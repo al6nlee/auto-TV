@@ -9,9 +9,9 @@ services:
       - JELLYFIN_TYPE=emby
       - TZ=Asia/Shanghai
     volumes:
-      - ./logs/jellyseerr:/app/logs
-      - ./custom_conf/jellyseerr/db:/app/config/db
-      - ./custom_conf/jellyseerr/settings.json:/app/config/settings.json
+      - ../logs/jellyseerr:/app/logs
+      - ../custom_conf/jellyseerr/db:/app/config/db
+      - ../custom_conf/jellyseerr/settings.json:/app/config/settings.json
     deploy:
       replicas: 1
 
@@ -25,7 +25,8 @@ services:
       - GIDLIST=0
       - TZ=TZ=Asia/Shanghai
     volumes:
-      - ./custom_conf/emby:/config
-      - ./data/video:/media/video
+      - ../data/video:/media/video
+      - ../logs/emby:/config/logs
+      - ../custom_conf/config:/config/config
     deploy:
       replicas: 1
