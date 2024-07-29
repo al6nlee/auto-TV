@@ -25,8 +25,11 @@ services:
       - GIDLIST=0
       - TZ=TZ=Asia/Shanghai
     volumes:
-      - ../data/video:/media/video
+      - ../data/video:/media/video         # 这个目录是为了挂载视频的
       - ../logs/emby:/config/logs
-      - ../custom_conf/config:/config/config
+      - ../custom_conf/emby/config:/config/config
+      - ../custom_conf/emby/data:/config/data
+      - ../custom_conf/emby/plugins:/config/plugins
+      - ../custom_conf/emby/cache:/config/cache
     deploy:
       replicas: 1

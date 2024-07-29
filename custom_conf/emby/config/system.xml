@@ -4,7 +4,7 @@
   <EnableAutoUpdate>true</EnableAutoUpdate>
   <LogFileRetentionDays>3</LogFileRetentionDays>
   <RunAtStartup>true</RunAtStartup>
-  <IsStartupWizardCompleted>false</IsStartupWizardCompleted>
+  <IsStartupWizardCompleted>true</IsStartupWizardCompleted>
   <EnableUPnP>true</EnableUPnP>
   <PublicPort>8096</PublicPort>
   <PublicHttpsPort>8920</PublicHttpsPort>
@@ -16,8 +16,8 @@
   <EnableRemoteAccess>true</EnableRemoteAccess>
   <LogAllQueryTimes>false</LogAllQueryTimes>
   <EnableCaseSensitiveItemIds>true</EnableCaseSensitiveItemIds>
-  <PreferredMetadataLanguage>en</PreferredMetadataLanguage>
-  <MetadataCountryCode>US</MetadataCountryCode>
+  <PreferredMetadataLanguage>zh-CN</PreferredMetadataLanguage>
+  <MetadataCountryCode>CN</MetadataCountryCode>
   <SortRemoveWords>
     <string>the</string>
     <string>a</string>
@@ -31,8 +31,9 @@
   <EnableDashboardResponseCaching>true</EnableDashboardResponseCaching>
   <ImageSavingConvention>Compatible</ImageSavingConvention>
   <EnableAutomaticRestart>true</EnableAutomaticRestart>
+  <ServerName>wakaka</ServerName>
   <PreferredDetectedRemoteAddressFamily>InterNetwork</PreferredDetectedRemoteAddressFamily>
-  <UICulture>en-us</UICulture>
+  <UICulture>zh-CN</UICulture>
   <RemoteClientBitrateLimit>0</RemoteClientBitrateLimit>
   <LocalNetworkSubnets />
   <LocalNetworkAddresses />
@@ -51,15 +52,15 @@
   <DatabaseCacheSizeMB>128</DatabaseCacheSizeMB>
   <EnableSqLiteMmio>false</EnableSqLiteMmio>
   <PlaylistsUpgradedToM3U>true</PlaylistsUpgradedToM3U>
-  <ImageExtractorUpgraded1>false</ImageExtractorUpgraded1>
-  <EnablePeopleLetterSubFolders>false</EnablePeopleLetterSubFolders>
+  <ImageExtractorUpgraded1>true</ImageExtractorUpgraded1>
+  <EnablePeopleLetterSubFolders>true</EnablePeopleLetterSubFolders>
   <OptimizeDatabaseOnShutdown>true</OptimizeDatabaseOnShutdown>
   <DatabaseAnalysisLimit>400</DatabaseAnalysisLimit>
   <DisableAsyncIO>false</DisableAsyncIO>
-  <MigratedToUserItemShares8>false</MigratedToUserItemShares8>
-  <MigratedLibraryOptionsToDb>false</MigratedLibraryOptionsToDb>
-  <AllowLegacyLocalNetworkPassword>true</AllowLegacyLocalNetworkPassword>
+  <MigratedToUserItemShares8>true</MigratedToUserItemShares8>
+  <MigratedLibraryOptionsToDb>true</MigratedLibraryOptionsToDb>
+  <AllowLegacyLocalNetworkPassword>false</AllowLegacyLocalNetworkPassword>
   <EnableSavedMetadataForPeople>false</EnableSavedMetadataForPeople>
-  <TvChannelsRefreshed>false</TvChannelsRefreshed>
-  <ProxyHeaderMode>RemoteAddressesOnly</ProxyHeaderMode>
+  <TvChannelsRefreshed>true</TvChannelsRefreshed>
+  <ProxyHeaderMode>AllAddresses</ProxyHeaderMode>
 </ServerConfiguration>
